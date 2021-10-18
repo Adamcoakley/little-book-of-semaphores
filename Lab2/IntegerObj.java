@@ -6,8 +6,6 @@
 package Lab2;
 
 /**
- * The Main program implements an application that
- * displays the effect of
  *
  * @author  Adam Coakley
  * @since   2021-10-11

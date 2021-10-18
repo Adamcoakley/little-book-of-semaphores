@@ -8,8 +8,6 @@ package Lab2.mutex;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * The Main program implements an application that
- * displays the effect of
  *
  * @author  Adam Coakley
  * @since   2021-10-11
