@@ -16,12 +16,29 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class IntegerObj {
 
+    /**
+     * Initialise a mutex lock
+     */
     private ReentrantLock mutex = new ReentrantLock();
 
+    /**
+     * Initialise an integer
+     */
     int value;
+
+    /**
+     * Constructor for IntegerObj
+     * @param val the value of the integer
+     */
     IntegerObj(int val) {
         this.value = val;
     }
+
+    /**
+     * a function to increment the value of the integer
+     * a mutex lock is used to protect the critical section (this.value++)
+     * @return the new value of the incremented integer
+     */
     int inc(){
         try {
             mutex.lock();

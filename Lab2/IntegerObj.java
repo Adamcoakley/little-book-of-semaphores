@@ -13,10 +13,24 @@ package Lab2;
  */
 
 class IntegerObj {
+
+    /**
+     * Initialise an integer
+     */
     int value;
+
+    /**
+     * Constructor for IntegerObj
+     * @param val the value of the integer
+     */
     IntegerObj(int val) {
         this.value = val;
     }
+
+    /**
+     * a function to increment the value of the integer
+     * @return the new value of the incremented integer
+     */
     int inc(){
         this.value++;
         return this.value;

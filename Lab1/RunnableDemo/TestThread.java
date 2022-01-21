@@ -9,6 +9,8 @@ package Lab1.RunnableDemo;
  * @author Adam Coakley
  * @since   2021-10-11
  *
+ * Creates two threads and runs them
+ *
  */
 
 public class TestThread {

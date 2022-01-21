@@ -12,7 +12,6 @@ package Lab1.TestThread;
  */
 
 class ThreadDemo extends Thread {
-    //fields and methods
     /**
      * Here is where we put our thread created by start() method
      */
@@ -50,7 +49,10 @@ class ThreadDemo extends Thread {
        */
       System.out.println("Thread " +  threadName + " exiting.");
    }
-   
+
+   /**
+    * Starts every tread
+    */
    @Override
    public void start () {
       System.out.println("Starting " +  threadName );

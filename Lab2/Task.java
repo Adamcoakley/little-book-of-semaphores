@@ -13,13 +13,28 @@ package Lab2;
  */
 
 public class Task implements Runnable {
-private String name;
+
+    /**
+     * Initialise a String and IntegerObj
+     */
+    private String name;
     private IntegerObj total;
+
+    /**
+     * Constructor for a Task object
+     * @param task_1 name of the task
+     * @param total integer value
+     */
     public Task(String task_1, IntegerObj total) {
         name=task_1;
         this.total = total;
     }
-    
+
+    /**
+     * function that loops from 0 to 499
+     * tries to increment the total value
+     * prints out the name of the task once completed
+     */
     public void run()
     {
         try

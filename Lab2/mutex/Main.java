@@ -18,36 +18,48 @@ import java.util.logging.Logger;
  */
 
 public class Main {
-    
-      // Maximum number of threads in thread pool
-    static final int MAX_T = 4;             
+
+    /**
+     * MAX_T = max number of threads in the thread pool
+     */
+    static final int MAX_T = 4;
   
     public static void main(String[] args)
     {
         IntegerObj total= new IntegerObj(0);
-        // creates five tasks
+        /**
+         * Create five tasks
+         */
         Runnable r1 = new Task("task 1",total);
         Runnable r2 = new Task("task 2",total);
         Runnable r3 = new Task("task 3",total);
         Runnable r4 = new Task("task 4",total);
-          
-        // creates a thread pool with MAX_T no. of 
-        // threads as the fixed pool size(Step 2)
-        ExecutorService pool = Executors.newFixedThreadPool(MAX_T);  
-         
-        // passes the Task objects to the pool to execute (Step 3)
+
+        /**
+         * Create a thread pool with MAX_T number pf threads
+         */
+        ExecutorService pool = Executors.newFixedThreadPool(MAX_T);
+
+        /**
+         * Uses the execute function to run each Task
+         */
         pool.execute(r1);
         pool.execute(r2);
         pool.execute(r3);
         pool.execute(r4);
-          
-        // pool shutdown ( Step 4)
+
+        /**
+         * Shutdown the thread pool
+         */
         pool.shutdown();    
         try {
             Thread.sleep(2500);
         } catch (InterruptedException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
+        /**
+         * Prints out the sum of each thread
+         */
         System.out.println("total is: "+total.value);
     }
 }

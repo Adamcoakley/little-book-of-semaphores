@@ -16,11 +16,22 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 class IntegerObj {
 
-    AtomicInteger  value;
+    /**
+     * Create an atomic integer
+     */
+    AtomicInteger value;
 
+    /**
+     * Constructor for IntegerObj
+     * @param val the value of the atomic integer
+     */
     IntegerObj(AtomicInteger val) {
         this.value = val;
     }
+    /**
+     * a function to increment the value of the atomic integer
+     * @return the new value of the incremented atomic integer
+     */
     int inc(){
         return value.incrementAndGet();
     }

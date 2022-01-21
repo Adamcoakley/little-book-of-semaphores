@@ -12,21 +12,30 @@ package Lab1.RunnableDemo;
  */
 
 class RunnableDemo implements Runnable {
+
+   /**
+    * Every thread is given a name
+    */
    private Thread t;
    private String threadName;
    
-   RunnableDemo( String name) {
+   RunnableDemo(String name) {
       threadName = name;
       System.out.println("Creating " +  threadName );
    }
-   
+
+   /**
+    * Prints out each threads name that is running
+    */
    @Override
    public void run() {
       System.out.println("Running " +  threadName );
       try {
          for(int i = 4; i > 0; i--) {
             System.out.println("Thread: " + threadName + ", " + i);
-            // Let the thread sleep for a while.
+            /**
+             * Lets each thread sleep for 50 millis
+             */
             Thread.sleep(50);
          }
       } catch (InterruptedException e) {
@@ -34,7 +43,10 @@ class RunnableDemo implements Runnable {
       }
       System.out.println("Thread " +  threadName + " exiting.");
    }
-   
+
+   /**
+    * Starts each thread and prints their name
+    */
    public void start () {
       System.out.println("Starting " +  threadName );
       if (t == null) {

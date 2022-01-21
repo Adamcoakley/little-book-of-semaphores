@@ -9,7 +9,7 @@ package Lab1.TestThread;
  * @author Adam Coakley
  * @since   2021-10-11
  *
- * Create two threads and run them.
+ * Creates two threads and runs them.
  *
  */
 

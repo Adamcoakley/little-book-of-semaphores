@@ -13,10 +13,25 @@ package Lab2.synchronised;
  */
 
 class IntegerObj {
+
+    /**
+     * Initialise an integer
+     */
     int value;
+
+    /**
+     * Constructor for IntegerObj
+     * @param val the value of the integer
+     */
     IntegerObj(int val) {
         this.value = val;
     }
+
+    /**
+     * a function to increment the value of the integer
+     * synchronized keyword is used to provide synchronisation and protect the critical section (this.value++)
+     * @return the new value of the incremented integer
+     */
     synchronized int inc(){
         this.value++;
         return this.value;
