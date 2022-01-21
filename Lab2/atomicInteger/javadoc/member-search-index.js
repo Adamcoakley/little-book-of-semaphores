@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"Lab2.atomicInteger","c":"Task","l":"name"},{"p":"Lab2.atomicInteger","c":"Task","l":"run()"},{"p":"Lab2.atomicInteger","c":"Task","l":"Task(String, IntegerObj)","u":"%3Cinit%3E(java.lang.String,Lab2.atomicInteger.IntegerObj)"},{"p":"Lab2.atomicInteger","c":"Task","l":"total"}];updateSearchResults();
