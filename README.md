@@ -4,6 +4,8 @@ CDD is a repository containing lab work for my Concurrent Device Development (CD
 
 ## Problems Solved
 • Reusable Barrier using Semaphores <br>
+• First in first out (FIFO) Queue using Semaphores <br>
 • Producer / Consumer <br>
 • Dining Philosophers <br>
+
 
