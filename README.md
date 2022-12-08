@@ -1,10 +1,10 @@
 # Concurrent Device Development
 
-CDD is a repository containing lab work for my Concurrent Device Development (CDD) during my final year. The labs completed are solutions to a lot of concurrent programming problems seen within the Little Book of Semaphores by Allen B. Downey.
+CDD is a repository containing lab work for my Concurrent Device Development (CDD) module during my final year. The labs completed are solutions to a lot of concurrent programming problems seen within the Little Book of Semaphores by Allen B. Downey.
 
 ## Problems Solved
 • Reusable Barrier using Semaphores <br>
-• First in first out (FIFO) Queue using Semaphores <br>
+• First in First Out (FIFO) Queue using Semaphores <br>
 • Producer / Consumer <br>
 • Dining Philosophers <br>
 
